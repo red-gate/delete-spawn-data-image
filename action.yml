@@ -1,0 +1,17 @@
+name: 'Spawn delete data-image action'
+description: 'Delete a spawn data image'
+inputs:
+  dataImage: 
+    description: 'The data image to delete'
+    required: true
+  additionalArgs:
+    description: 'Additional arguments to provide (e.g flags for a command)'
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dataImage }}
+    - ${{ inputs.additionalArgs }}
