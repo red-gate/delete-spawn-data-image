@@ -1,4 +1,7 @@
-name: 'Spawn delete data-image action'
+name: 'Delete Spawn Data Image'
+branding:
+  color: purple
+  icon: database
 description: 'Delete a spawn data image'
 inputs:
   dataImage: 
